@@ -30,7 +30,7 @@ class Bike < Vehicle
     # calculates the cadence for a 24" wheel
     def calc_cadence
         # formula to calculate rpm of a wheel
-        @cadence = ((get_speed * get_speed) / 12 * 2)
+        @cadence = (get_speed / 12 * 2)
         @cadence_int = @cadence.to_i
         return @cadence_int
     end
